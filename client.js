@@ -4,12 +4,12 @@ const ws = new WebSocket('ws://localhost:8080');
 
 ws.on('open', function open() {
 	var response = {
-		"message": 
-		"Update Versi Baru Dokumen. Versi terbaru Panduan PJJ final telah terupload"
+		"message":
+			"Anjay Surinjay"
 	}
 
 
-	ws.send('gela'+JSON.stringify(response), {},(tes) => {
+	ws.send('gela' + JSON.stringify(response), {}, (tes) => {
 		console.log('callback');
 	});
 	ws.on('message', function incoming(message) {
